@@ -1,0 +1,16 @@
+body { 
+	width: 100%; 
+	margin:0; 
+	padding: 0;
+}
+
+paper-toolbar.main { 
+	background: var(--paper-blue-900);
+}
+
+paper-fab.add { 
+	position: absolute; 
+	bottom: 10px;
+	right: 10px; 
+	background: var(--paper-blue-400); 
+}

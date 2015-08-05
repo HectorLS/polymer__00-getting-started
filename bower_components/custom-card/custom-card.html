@@ -1,0 +1,24 @@
+<dom-module id="custom-card"> <!-- El id debe ser el nombre con el que vamos a registrar el componente, es una buena práctica llamarlo igual que a la carpeta -->
+	<link rel="stylesheet" href="custom-card.css">
+	<template>
+		<div>
+			<span>{{name}}</span>
+			<span>{{age}}</span>
+		</div>
+	</template>
+</dom-module>
+<script>
+	Polymer({
+		/*Llamamos al objeto que acabamos de crear */
+		is: 'custom-card',
+		/* Object attributes */   
+		properties: {
+			name: String,
+			age: Number
+		},
+		/* */  
+		ready: function(){
+			console.log("custom-card ready!");
+		}    
+	});
+</script>
